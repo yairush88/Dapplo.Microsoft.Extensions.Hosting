@@ -14,6 +14,7 @@ namespace Dapplo.Hosting.Sample.PluginWithDependency
     public class Plugin : IPlugin
     {
         /// <inheritdoc />
-        public void ConfigureHost(HostBuilderContext hostBuilderContext, IServiceCollection serviceCollection) => serviceCollection.AddHostedService<MySampleBackgroundService>();
+        public void ConfigureHost(HostBuilderContext hostBuilderContext, IServiceCollection serviceCollection) =>
+            serviceCollection.AddHostedService<MySampleBackgroundService>();
     }
 }
